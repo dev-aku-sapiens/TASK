@@ -1,0 +1,118 @@
+html
+{
+    font-size: 18px;
+    font-family:'Lato', Arial, sans-serif;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button
+{
+    padding: 15px 30px 15px 30px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg,#EE7752,#fff,#083adf,#E73C7E);
+    background-size: 250% 250%;
+    position: relative;
+    animation: change2 15s ease-out infinite;
+    border-radius: 8px;
+    margin: 0 40px 0px 40px;
+}
+
+@keyframes change2
+{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 75%;
+    }
+    100%{
+        background-position: 0 75%;
+    }
+}
+
+button:hover
+{
+    border-style :solid;
+    border-color:  rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.task
+{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E, #083adf,#32d6ff);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-out infinite;
+    border-style :solid;
+    border-color:  rgb(0, 0, 0);
+}
+
+@keyframes change
+{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 75% 75%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.amt
+{
+    padding: 25px 25px 180px 25px;
+}
+  
+@media only screen and (max-width: 450px) {
+    .task {
+        position: absolute;
+        top: 6%;
+        left: 8%;
+        width: 80%;
+        height: 75%;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(-45deg,#EE7752,#E73C7E, #083adf,#32d6ff);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 15s ease-out infinite;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+    }
+
+    button
+    {
+        padding: 15px 40px 15px 40px;
+        color: rgb(0, 0, 0);
+        background: linear-gradient(45deg,#EE7752,#fff,#083adf,#E73C7E);
+        background-size: 250% 250%;
+        position: relative;
+        animation: change2 15s ease-out infinite;
+        border-radius: 8px;
+        margin: 3% 2% 2% 2%;
+    }
+
+    button:hover
+    {
+        border-style :solid;
+        border-color:  rgb(255, 255, 255);
+        border-radius: 8px;
+    }
+  }
