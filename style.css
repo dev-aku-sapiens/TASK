@@ -43,8 +43,9 @@ button:hover
 .amt
 {
     width:100%;
-    height: 250px;
+    height: 70%;
     padding-top: 30px;
+    margin: 0;
 }
 
 .task
@@ -76,14 +77,15 @@ button:hover
 }
 
   
-@media only screen and (max-width: 450px) {
-
+@media only screen and (max-width: 450px) 
+{
     body{
         font-size: 24px;
     }
+
     .task {
-        width: 80%;
-        height: 75%;
+        width: 83%;
+        height: 87%;
         text-align: center;
         color: #fff;
         top: 6%;
@@ -114,7 +116,8 @@ button:hover
     .amt
     {
         width:100%;
-        height: 70%;
+        height: 80%;
+        margin:0;
         padding-top: 30px;
     }
   }
